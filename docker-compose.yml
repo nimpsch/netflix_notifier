@@ -1,0 +1,13 @@
+services:
+  fetch-emails:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    pull_policy: build
+    environment:
+      - GMX_USERNAME=${GMX_USERNAME}
+      - GMX_PASSWORD=${GMX_PASSWORD}
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+      - TELEGRAM_CHAT_ID=${TELEGRAM_CHAT_ID}
+      - SLEEP_TIME=${SLEEP_TIME:-30}
+    restart: unless-stopped

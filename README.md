@@ -1,1 +1,1 @@
-# netflix_notifier
+# newsletter-finder

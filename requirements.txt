@@ -1,0 +1,5 @@
+imap-tools
+python-dotenv
+python-telegram-bot
+PyYAML
+beautifulsoup4
